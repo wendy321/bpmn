@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/NFRFrameworkModel_1/src" modelPluginID="NFRFrameworkModel_1"
+    modelName="NFRFrameworkModel_1" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>nFRFrameworkModel_1.ecore</foreignModel>
+  <genPackages prefix="NFRFrameworkModel_1" disposableProviderFactory="true" ecorePackage="nFRFrameworkModel_1.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="nFRFrameworkModel_1.ecore#//SatisficingLabelTye">
+      <genEnumLiterals ecoreEnumLiteral="nFRFrameworkModel_1.ecore#//SatisficingLabelTye/Undecided"/>
+      <genEnumLiterals ecoreEnumLiteral="nFRFrameworkModel_1.ecore#//SatisficingLabelTye/Satisficed"/>
+      <genEnumLiterals ecoreEnumLiteral="nFRFrameworkModel_1.ecore#//SatisficingLabelTye/WeaklySatisficed"/>
+      <genEnumLiterals ecoreEnumLiteral="nFRFrameworkModel_1.ecore#//SatisficingLabelTye/WeaklyDenied"/>
+      <genEnumLiterals ecoreEnumLiteral="nFRFrameworkModel_1.ecore#//SatisficingLabelTye/Denied"/>
+      <genEnumLiterals ecoreEnumLiteral="nFRFrameworkModel_1.ecore#//SatisficingLabelTye/Conflict"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="nFRFrameworkModel_1.ecore#//SoftGoal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nFRFrameworkModel_1.ecore#//SoftGoal/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nFRFrameworkModel_1.ecore#//SoftGoal/goalType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nFRFrameworkModel_1.ecore#//SoftGoal/goalTopic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nFRFrameworkModel_1.ecore#//SoftGoal/satisficingLabel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference nFRFrameworkModel_1.ecore#//SoftGoal/contrioTypeToParent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference nFRFrameworkModel_1.ecore#//SoftGoal/child"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference nFRFrameworkModel_1.ecore#//SoftGoal/parents"/>
+    </genClasses>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//NFRFramework">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nFRFrameworkModel_1.ecore#//NFRFramework/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference nFRFrameworkModel_1.ecore#//NFRFramework/softgoalMembers"/>
+    </genClasses>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//NFRSoftgoal"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//OperationalizingSoftgoal"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//ClaimSoftgoal"/>
+    <genClasses image="false" ecoreClass="nFRFrameworkModel_1.ecore#//Contribution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nFRFrameworkModel_1.ecore#//Contribution/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference nFRFrameworkModel_1.ecore#//Contribution/targetSoftgoal"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="nFRFrameworkModel_1.ecore#//Decomosition"/>
+    <genClasses image="false" ecoreClass="nFRFrameworkModel_1.ecore#//Satisficing"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//ANDDecomposition"/>
+    <genClasses image="false" ecoreClass="nFRFrameworkModel_1.ecore#//PositiveSatisficing"/>
+    <genClasses image="false" ecoreClass="nFRFrameworkModel_1.ecore#//NegaitiveSatisficing"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//Make"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//Help"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//SomePlus"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//Break"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//Hurt"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//SomeMinus"/>
+    <genClasses ecoreClass="nFRFrameworkModel_1.ecore#//ORDecomposition"/>
+  </genPackages>
+</genmodel:GenModel>
